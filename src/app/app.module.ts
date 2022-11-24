@@ -9,6 +9,7 @@ import { UserSignupComponent } from './user-signup/user-signup.component';
 import { UserSigninComponent } from './user-signin/user-signin.component';
 import { NavbarHomeComponent } from './navbar-home/navbar-home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { BookEntryComponent } from './book-entry/book-entry.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -34,7 +35,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     UserSignupComponent,
     UserSigninComponent,
-    NavbarHomeComponent
+    NavbarHomeComponent,
+    BookEntryComponent
   ],
   imports: [
     BrowserModule,
