@@ -14,6 +14,7 @@ import { BookSearchComponent } from './book-search/book-search.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { BookIssueComponent } from './book-issue/book-issue.component';
+import { ViewAllBooksComponent } from './view-all-books/view-all-books.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -44,7 +45,8 @@ const myRoute:Routes=[
     BookSearchComponent,
     BookEditComponent,
     BookDeleteComponent,
-    BookIssueComponent
+    BookIssueComponent,
+    ViewAllBooksComponent
   ],
   imports: [
     BrowserModule,
