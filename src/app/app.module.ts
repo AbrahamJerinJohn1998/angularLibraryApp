@@ -11,6 +11,7 @@ import { NavbarHomeComponent } from './navbar-home/navbar-home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { BookSearchComponent } from './book-search/book-search.component';
+import { BookEditComponent } from './book-edit/book-edit.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -38,7 +39,8 @@ const myRoute:Routes=[
     UserSigninComponent,
     NavbarHomeComponent,
     BookEntryComponent,
-    BookSearchComponent
+    BookSearchComponent,
+    BookEditComponent
   ],
   imports: [
     BrowserModule,
