@@ -1,10 +1,11 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row">
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Book Title </label>
-                <input type="text" class="form-control">
+                <input name="bTitle" [(ngModel)]="bTitle" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Book Image </label>
@@ -12,34 +13,34 @@
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Author </label>
-                <input type="text" class="form-control">
+                <input name="bAuthor" [(ngModel)]="bAuthor" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Publisher</label>
-                <input type="text" class="form-control">
+                <input name="bPublisher" [(ngModel)]="bPublisher" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Description </label>
-                <input type="text" class="form-control">
+                <input name="bDescription" [(ngModel)]="bDescription" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Language</label>
-                <input type="text" class="form-control">
+                <input name="bLanguage" [(ngModel)]="bLanguage" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Distributor</label>
-                <input type="text" class="form-control">
+                <input name="bDistributor" [(ngModel)]="bDistributor" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Released year</label>
-                <input type="text" class="form-control">
+                <input name="bReleasedYear" [(ngModel)]="bReleasedYear" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Price</label>
-                <input type="text" class="form-control">
+                <input name="bPrice" [(ngModel)]="bPrice" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                <button class="btn btn-success">Add</button>
+                <button (click)="readValue()" class="btn btn-success">Add</button>
             </div>
             </div>
         </div>

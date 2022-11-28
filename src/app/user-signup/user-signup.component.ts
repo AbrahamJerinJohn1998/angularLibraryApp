@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-signup.component.css']
 })
 export class UserSignupComponent {
+  name=""
+  aadharNo=""
+  address=""
+  pinCode=""
+  readValue=()=>
+  {
+    let data:any={"name":this.name,"aadharNo":this.aadharNo,"address":this.address,"pinCode":this.pinCode}
+    console.log(data)
+  }
+  
+
 
 }
