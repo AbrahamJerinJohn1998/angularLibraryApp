@@ -16,6 +16,7 @@ import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { BookIssueComponent } from './book-issue/book-issue.component';
 import { ViewAllBooksComponent } from './view-all-books/view-all-books.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 const myRoute:Routes=[
   {
     path:"",
@@ -32,7 +33,32 @@ const myRoute:Routes=[
   {
     path:"usersignin",
     component:UserSigninComponent
+  },
+  {
+    path:"bookentry",
+    component:BookEntryComponent
+  },
+  {
+    path:"bookedit",
+    component:BookEditComponent
+  },
+  {
+    path:"bookdelete",
+    component:BookDeleteComponent
+  },
+  {
+    path:"booksearch",
+    component:BookSearchComponent
+  },
+  {
+    path:"bookissue",
+    component:BookIssueComponent
+  },
+  {
+    path:"viewallbooks",
+    component:ViewAllBooksComponent
   }
+
 ]
 @NgModule({
   declarations: [
@@ -53,7 +79,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
